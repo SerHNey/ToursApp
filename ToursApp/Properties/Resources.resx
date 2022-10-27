@@ -121,4 +121,31 @@
   <data name="escape_from_tarkov_PNG16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\escape_from_tarkov_PNG16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Franc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\franc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Germany" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\germany.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_48334" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_48334.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Irak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\irak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iran" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\iran.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Russia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\russia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Siria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\siria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vengria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\vengria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

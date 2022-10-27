@@ -28,7 +28,7 @@ namespace ToursApp.AllPages
 
             if (selectHotel != null)
             {
-                currentHotel = selectHotel; 
+                currentHotel = selectHotel;
             }
             DataContext = currentHotel;
             ComboCountries.ItemsSource = ToursbaseEntity.GetContext().Country.ToList();
