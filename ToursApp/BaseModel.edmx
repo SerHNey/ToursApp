@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище Toursbase43PDSModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище PrimeToursbase" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Country">
           <Key>
             <PropertyRef Name="Code" />
@@ -16,7 +16,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
           <Property Name="CountOfStars" Type="int" />
           <Property Name="CountryCode" Type="nchar" MaxLength="2" Nullable="false" />
@@ -25,7 +25,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Hotelid" Type="int" Nullable="false" />
           <Property Name="Text" Type="nvarchar" MaxLength="50" />
           <Property Name="Author" Type="nvarchar" MaxLength="50" />
@@ -172,7 +172,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Хранилище Toursbase43PDSModelContainer">
+        <EntityContainer Name="Хранилище PrimeToursbaseContainer">
           <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HotelComment" EntityType="Self.HotelComment" Schema="dbo" store:Type="Tables" />
@@ -221,7 +221,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Toursbase43PDSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="PrimeToursbase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Country">
           <Key>
             <PropertyRef Name="Code" />
@@ -234,7 +234,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CountOfStars" Type="Int32" />
           <Property Name="CountryCode" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
@@ -247,7 +247,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Hotelid" Type="Int32" Nullable="false" />
           <Property Name="Text" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -341,7 +341,7 @@
           <End Role="Tour" Type="Self.Tour" Multiplicity="*" />
           <End Role="Type" Type="Self.Type" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="Toursbase43PDSEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ToursbaseEntity" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Country" EntityType="Self.Country" />
           <EntitySet Name="Hotel" EntityType="Self.Hotel" />
           <EntitySet Name="HotelComment" EntityType="Self.HotelComment" />
@@ -375,9 +375,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище Toursbase43PDSModelContainer" CdmEntityContainer="Toursbase43PDSEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище PrimeToursbaseContainer" CdmEntityContainer="ToursbaseEntity">
           <EntitySetMapping Name="Country">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.Country">
+            <EntityTypeMapping TypeName="PrimeToursbase.Country">
               <MappingFragment StoreEntitySet="Country">
                 <ScalarProperty Name="Code" ColumnName="Code" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -385,7 +385,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Hotel">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.Hotel">
+            <EntityTypeMapping TypeName="PrimeToursbase.Hotel">
               <MappingFragment StoreEntitySet="Hotel">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -395,7 +395,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HotelComment">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.HotelComment">
+            <EntityTypeMapping TypeName="PrimeToursbase.HotelComment">
               <MappingFragment StoreEntitySet="HotelComment">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Hotelid" ColumnName="Hotelid" />
@@ -406,7 +406,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.sysdiagrams">
+            <EntityTypeMapping TypeName="PrimeToursbase.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -417,7 +417,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Tour">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.Tour">
+            <EntityTypeMapping TypeName="PrimeToursbase.Tour">
               <MappingFragment StoreEntitySet="Tour">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="TicketCount" ColumnName="TicketCount" />
@@ -430,7 +430,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Type">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.Type">
+            <EntityTypeMapping TypeName="PrimeToursbase.Type">
               <MappingFragment StoreEntitySet="Type">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -439,7 +439,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="HotelImage">
-            <EntityTypeMapping TypeName="Toursbase43PDSModel.HotelImage">
+            <EntityTypeMapping TypeName="PrimeToursbase.HotelImage">
               <MappingFragment StoreEntitySet="HotelImage">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Hotelid" ColumnName="Hotelid" />
@@ -447,7 +447,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="HotelOfTour" TypeName="Toursbase43PDSModel.HotelOfTour" StoreEntitySet="HotelOfTour">
+          <AssociationSetMapping Name="HotelOfTour" TypeName="PrimeToursbase.HotelOfTour" StoreEntitySet="HotelOfTour">
             <EndProperty Name="Hotel">
               <ScalarProperty Name="id" ColumnName="Hotelid" />
             </EndProperty>
@@ -455,7 +455,7 @@
               <ScalarProperty Name="id" ColumnName="Tourid" />
             </EndProperty>
           </AssociationSetMapping>
-          <AssociationSetMapping Name="TypeOfTour" TypeName="Toursbase43PDSModel.TypeOfTour" StoreEntitySet="TypeOfTour">
+          <AssociationSetMapping Name="TypeOfTour" TypeName="PrimeToursbase.TypeOfTour" StoreEntitySet="TypeOfTour">
             <EndProperty Name="Tour">
               <ScalarProperty Name="id" ColumnName="Tourid" />
             </EndProperty>

@@ -4,19 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="904fb70911034e03ba5ef5624911103d" Name="Diagram1">
-        <EntityTypeShape EntityType="Toursbase43PDSModel.Country" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="Toursbase43PDSModel.Hotel" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="Toursbase43PDSModel.HotelComment" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Toursbase43PDSModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Toursbase43PDSModel.Tour" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="Toursbase43PDSModel.Type" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Toursbase43PDSModel.HotelImage" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
-        <AssociationConnector Association="Toursbase43PDSModel.FK_Hotel_Country" ManuallyRouted="false" />
-        <AssociationConnector Association="Toursbase43PDSModel.FK_HotelComment_Hotel" ManuallyRouted="false" />
-        <AssociationConnector Association="Toursbase43PDSModel.FK_HotelImage_Hotel" ManuallyRouted="false" />
-        <AssociationConnector Association="Toursbase43PDSModel.HotelOfTour" ManuallyRouted="false" />
-        <AssociationConnector Association="Toursbase43PDSModel.TypeOfTour" ManuallyRouted="false" />
+      <Diagram DiagramId="b93734051f3944768b64e27dc3cb074c" Name="Diagram1">
+        <EntityTypeShape EntityType="PrimeToursbase.Country" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeToursbase.Hotel" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeToursbase.HotelComment" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeToursbase.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeToursbase.Tour" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeToursbase.Type" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeToursbase.HotelImage" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="PrimeToursbase.FK_Hotel_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeToursbase.FK_HotelComment_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeToursbase.FK_HotelImage_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeToursbase.HotelOfTour" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeToursbase.TypeOfTour" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

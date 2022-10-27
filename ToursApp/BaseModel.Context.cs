@@ -13,18 +13,17 @@ namespace ToursApp
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Toursbase43PDSEntities : DbContext
+    public partial class ToursbaseEntity : DbContext
     {
-        private static Toursbase43PDSEntities _context;
-        public Toursbase43PDSEntities()
-            : base("name=Toursbase43PDSEntities")
+        private static ToursbaseEntity _context;
+        public ToursbaseEntity()
+            : base("name=ToursbaseEntity")
         {
         }
-        
-        public static Toursbase43PDSEntities GetContext()
+        public static ToursbaseEntity GetContext()
         {
             if (_context == null)
-                _context = new Toursbase43PDSEntities();
+                _context = new ToursbaseEntity();
 
             return _context;
         }
