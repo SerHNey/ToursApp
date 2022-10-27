@@ -23,7 +23,7 @@ namespace ToursApp.HotelPades
         public HotelPage()
         {
             InitializeComponent();
-            DGridHotels.ItemsSource = Toursbase43PDSEntities.GetContext().Hotel.ToList(); 
+            //DGridHotels.ItemsSource = Toursbase43PDSEntities.GetContext().Hotel.ToList(); 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -44,6 +44,15 @@ namespace ToursApp.HotelPades
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                Toursbase43PDSEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridHotels.ItemsSource = Toursbase43PDSEntities.GetContext().Hotel.ToList();
+            }
         }
     }
 }
