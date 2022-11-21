@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToursApp.AllPages;
 
 namespace ToursApp
 {
@@ -25,8 +26,9 @@ namespace ToursApp
         public MainWindow()
         {
             InitializeComponent();
-            //MainFrame.Navigate(new HotelPades.HotelPage());
-            //Manager.MainFrame = MainFrame;
+
+            MainFrame.Navigate(new AllPages.AutorizationPage());
+            Manager.MainFrame = MainFrame;
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
@@ -42,6 +44,11 @@ namespace ToursApp
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("https://github.com/Zik-13");
+        }
+
+        private void CloseApp_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

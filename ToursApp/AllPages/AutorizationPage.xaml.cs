@@ -24,5 +24,6 @@ namespace ToursApp.AllPages
         {
             InitializeComponent();
         }
+
     }
-}
+}       
