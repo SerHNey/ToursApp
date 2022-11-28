@@ -5,18 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToursApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Image Source="Resources\escape_from_tarkov_PNG16.png" HorizontalAlignment="Left"/>
-        <TextBlock Text="Header" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-        <Grid Background="#bae3e8" Panel.ZIndex="-1"></Grid>
-        <Grid Grid.Row="2" Background="#445c93"></Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0F0F2D" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Zik" Foreground="White" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#JosefinSecond" FontWeight="Medium" FontSize="22"/>
+            <TextBlock Text="Menu" Foreground="LightGray" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#JosefinSecond" FontSize="22"/>
+            <Button Width="85" Height="50" Grid.Column="2" HorizontalAlignment="Center" Background="#0F0F2D" BorderThickness="0" Content="Website" Foreground="LightGray" FontSize="22" FontFamily="Fonts/Josefin" ></Button>
+
+            <Button Height="48" Width="48" Background="Red" Padding="0 0 0 4" Content="❌" Foreground="White" FontSize="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Grid.Column="8" BorderBrush="Black" Name="CloseApp" Click="CloseApp_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
         <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame"></Frame>
-        <Button Content="Back" Name="BtnBack" HorizontalAlignment="Right" VerticalAlignment="Center" Click="BtnBack_Click"></Button>
     </Grid>
 </Window>

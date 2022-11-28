@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToursApp.AllPages;
 
 namespace ToursApp
 {
@@ -24,7 +26,8 @@ namespace ToursApp
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new HotelPades.HotelPage());
+
+            MainFrame.Navigate(new AllPages.AutorizationPage());
             Manager.MainFrame = MainFrame;
         }
 
@@ -35,14 +38,17 @@ namespace ToursApp
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-            if (MainFrame.CanGoBack)
-            {
-                BtnBack.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                BtnBack.Visibility = Visibility.Hidden;
-            }
+           
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://github.com/Zik-13");
+        }
+
+        private void CloseApp_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

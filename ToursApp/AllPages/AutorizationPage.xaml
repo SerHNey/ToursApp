@@ -1,0 +1,63 @@
+﻿<Page x:Class="ToursApp.AllPages.AutorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ToursApp.AllPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="AutorizationPage" Background="#181735">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Border Height="300" Width="400" Background="White" BorderBrush="Black" BorderThickness="8">
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <Image Width="80" Height="80" Source="/AllPages/shuttle.png"/>
+                    <TextBlock Text="Let's start together!" HorizontalAlignment="Center" FontFamily="Fonts/Joesfin.ttf" FontWeight="Bold" Margin="10" FontSize="22"/>
+                    <TextBlock Text="Hi! This is an application created for choosing a tour, allowing you to choose absolutely every point and get all the available information about your planned trip.
+If you don't have an account, then you need to register. If you have an account, but you forgot the data, then you need to select the appropriate item." TextWrapping="Wrap" FontSize="14" Background="#FFEFEFEF"/>
+                    <TextBlock Text="Any other questions? Write to us Zik#3403" FontSize="12" HorizontalAlignment="Right" Margin="0 10 0 0"/>
+                </StackPanel>
+                <Border.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Border.Resources>
+            </Border>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
+            <Image Source="/AllPages/logo.png" Width="auto" Height="400"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Height="50" Width="230" Margin="10 0 0 0" Content="Login" FontFamily="Fotns/#JosefinSecond" FontSize="32" FontWeight="Medium" Foreground="#FFD9D9D9" Background="#FF32A89A" BorderThickness="1.5" BorderBrush="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Height="50" Width="230" Margin="20 0 0 0" Content="Registration" FontFamily="Fotns/#JosefinSecond" FontSize="23" FontWeight="Medium" Foreground="#FFD9D9D9" Background="#FF32A89A" BorderThickness="1.5" BorderBrush="White">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+            <Button Height="25" Width="150" Margin="0 10 0 0" Background="#FF32A89A" BorderThickness="1" BorderBrush="White" Content="Forgot the data" Foreground="WhiteSmoke" FontSize="14">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
