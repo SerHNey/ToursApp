@@ -53,6 +53,7 @@ If you don't have an account, then you need to register. If you have an account,
                         </Style>
                     </Button.Resources>
                 </Button>
+                <Label/>
             </StackPanel>
             <Button Height="25" Width="150" Margin="0 10 0 0" Background="#FF32A89A" BorderThickness="1" BorderBrush="White" Content="Forgot the data" Foreground="WhiteSmoke" FontSize="14">
                 <Button.Resources>
