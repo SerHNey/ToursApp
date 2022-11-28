@@ -186,12 +186,14 @@
     <Resource Include="Resources\escape_from_tarkov_PNG16.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\icons8flagstart.png" />
     <Resource Include="Resources\logo.png" />
     <Resource Include="closeicon.png" />
     <Resource Include="Resources\closeicon.png" />
     <Resource Include="Resources\shuttler.png" />
     <Resource Include="AllPages\logo.png" />
     <Resource Include="AllPages\shuttle.png" />
+    <Resource Include="AllPages\icons8flagstart.png" />
     <Content Include="BaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BaseModel.Context.cs</LastGenOutput>

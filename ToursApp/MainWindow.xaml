@@ -15,7 +15,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Grid Background="#0F0F2D" Grid.ColumnSpan="2">
+        <Grid Background="#0F0F2D" Grid.ColumnSpan="2" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -26,8 +26,6 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-
-
             </Grid.ColumnDefinitions>
             <TextBlock Text="Zik" Foreground="White" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#JosefinSecond" FontWeight="Medium" FontSize="22"/>
             <TextBlock Text="Menu" Foreground="LightGray" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#JosefinSecond" FontSize="22"/>

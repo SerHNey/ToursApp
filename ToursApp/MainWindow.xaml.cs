@@ -50,5 +50,10 @@ namespace ToursApp
         {
             this.Close();
         }
+
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 }
