@@ -15,29 +15,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Grid Background="#0F0F2D" Grid.ColumnSpan="2" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <TextBlock Text="Zik" Foreground="White" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#JosefinSecond" FontWeight="Medium" FontSize="22"/>
-            <TextBlock Text="Menu" Foreground="LightGray" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Fonts/#JosefinSecond" FontSize="22"/>
-            <Button Width="85" Height="50" Grid.Column="2" HorizontalAlignment="Center" Background="#0F0F2D" BorderThickness="0" Content="Website" Foreground="LightGray" FontSize="22" FontFamily="Fonts/Josefin" ></Button>
+        <Grid>
 
-            <Button Height="48" Width="48" Background="Red" Padding="0 0 0 4" Content="❌" Foreground="White" FontSize="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Grid.Column="8" BorderBrush="Black" Name="CloseApp" Click="CloseApp_Click">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            
         </Grid>
         <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame"></Frame>
     </Grid>
